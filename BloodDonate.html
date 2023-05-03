@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Blood Donation App</h1>
+    <p id="demo"></p>
+
+    <script>
+        var age = prompt("Enter your age");
+        
+        if(age > 18)
+        {
+            var weg = prompt("Enter your weight");
+            if(weg >= 50)
+            {
+                document.getElementById("demo").innerHTML="Blood Donate";
+            }
+            else{
+                document.getElementById("demo").innerHTML="Under weight";
+            }
+        }
+        else{
+            document.getElementById("demo").innerHTML="Under Age";
+        }
+    </script>
+</body>
+</html>
